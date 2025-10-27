@@ -9,10 +9,10 @@ export default function App() {
     <div className="min-h-screen w-full bg-slate-950 text-white">
       <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-slate-950/70 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-          <div className="flex items-center gap-3">
+          <a href="#top" className="flex items-center gap-3">
             <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-emerald-400 to-cyan-400" />
             <span className="font-semibold">GDesigns</span>
-          </div>
+          </a>
           <nav className="hidden items-center gap-6 text-sm text-slate-300 sm:flex">
             <a href="#services" className="hover:text-white">Services</a>
             <a href="#founder" className="hover:text-white">Founder</a>
@@ -25,9 +25,9 @@ export default function App() {
       <main>
         <Hero3D />
         <ServicesGrid />
-        <div id="founder">
+        <section id="founder">
           <FounderGlass />
-        </div>
+        </section>
         <ContactCTA />
       </main>
     </div>
